@@ -1,6 +1,6 @@
 # Runway Info
 
-<p align="center">Check out this Blog-Post (german) how we installed our weather-station</p>
+<p align="center">Check out this <a href="https://www.edmf.de/2018/05/04/neue-wetterstation/">Blog-Post (german)</a> how we installed our weather-station</p>
 
 <p align="center"><img src="https://www.edmf.de/weather/demo.png"></p>
 
