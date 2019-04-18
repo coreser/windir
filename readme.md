@@ -1,3 +1,5 @@
+<p align="center"><img src="https://www.edmf.de/weather/demo.png"></p>
+
 # Setup
 - Clone the repo
 - Edit Images to fit your runway
