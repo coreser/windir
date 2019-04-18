@@ -1,5 +1,7 @@
 <?php
-
+/**
+ * Load the realtime.txt
+ */
 $realtimeFile = file_get_contents('realtime.txt');
 
 /**
@@ -43,7 +45,98 @@ $winddir = $realtime[7];
   <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 
   <!-- Styles -->
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <style media="screen">
+  /* CSS */
+  html, body {
+    background-color: #fff;
+    color: #636b6f;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .full-height {
+    height: 100vh;
+  }
+
+  .flex-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .position-ref {
+    position: relative;
+  }
+
+  .top-right {
+    position: absolute;
+    right: 10px;
+    top: 18px;
+  }
+
+  .content {
+    text-align: center;
+  }
+
+  .title {
+    font-size: 84px;
+  }
+
+  .links > a {
+    color: #636b6f;
+    padding: 0 25px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .m-b-md {
+    margin-bottom: 30px;
+  }
+
+  #wind {
+    -webkit-transform-origin: 0 0;
+    z-index: 10;
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    top: 30%;
+    left: 45%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+  }
+
+  #knots {
+    z-index: 20;
+    color: #0094FF;
+    background-color: #F2FF00;
+    padding: 10px;
+    top: -40px;
+    position: absolute;
+  }
+
+  #arrow {
+    -webkit-transform: rotate(<?php echo $winddir ?>deg);
+    -ms-transform: rotate(<?php echo $winddir ?>deg); /* IE 9 */
+    transform: rotate(<?php echo $winddir ?>deg);
+  }
+
+  .bold {
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .windinfo {
+    position: relative;
+  }
+  </style>
 
   <title>Runway Info</title>
 
